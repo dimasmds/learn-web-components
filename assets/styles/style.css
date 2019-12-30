@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 16px;
+}
+
+movie-element {
+    margin: 16px auto;
+    width: 48%;
+}
+
+@media screen and (max-width: 650px) {
+    main {
+        flex-direction: column;
+    }
+
+    movie-element {
+        width: 100%;
+    }
+}
